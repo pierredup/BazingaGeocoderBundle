@@ -63,14 +63,13 @@ class AttributeDriver implements DriverInterface
 
         foreach ($reflection->getProperties() as $property) {
             foreach ($property->getAttributes() as $attribute) {
-
-                if ($attribute->getName() === Annotations\Latitude::class) {
+                if (Annotations\Latitude::class === $attribute->getName()) {
                     $property->setAccessible(true);
                     $metadata->latitudeProperty = $property;
-                } elseif ($attribute->getName() === Annotations\Longitude::class) {
+                } elseif (Annotations\Longitude::class === $attribute->getName()) {
                     $property->setAccessible(true);
                     $metadata->longitudeProperty = $property;
-                } elseif ($attribute->getName() === Annotations\Address::class) {
+                } elseif (Annotations\Address::class === $attribute->getName()) {
                     $property->setAccessible(true);
                     $metadata->addressProperty = $property;
                 }

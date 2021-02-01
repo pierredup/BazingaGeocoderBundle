@@ -12,8 +12,8 @@ declare(strict_types=1);
 
 namespace Bazinga\GeocoderBundle\Tests\Mapping\Driver;
 
-use Bazinga\GeocoderBundle\Mapping\Annotations\Geocodeable;
 use Bazinga\GeocoderBundle\Mapping\Annotations\Address;
+use Bazinga\GeocoderBundle\Mapping\Annotations\Geocodeable;
 use Bazinga\GeocoderBundle\Mapping\Annotations\Latitude;
 use Bazinga\GeocoderBundle\Mapping\Annotations\Longitude;
 use Bazinga\GeocoderBundle\Mapping\Driver\AttributeDriver;
